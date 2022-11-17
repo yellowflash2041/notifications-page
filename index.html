@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Notifications page</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <main>
+    <div class="container">
+      <header>
+        <div class="notif-container fw-800">
+          <h1>Notifications</h1>
+          <p class="notif-number">0</p>
+        </div>
+        <p class="mark fw-500">Mark all as read</p>
+      </header>
+      <div class="notifications-container">
+        <div class="notifications unread">
+          <img src="./assets/images/avatar-mark-webber.webp" alt="image of Mark Webber" />
+          <div class="notifications-content">
+            <h2>
+              <span class="name fw-800">Mark Webber</span>
+              <span class="action fw-500">reacted to your recent post</span>
+              <span class="object fw-800">My first tournament today!</span>
+            </h2>
+            <p class="time fw-500">1m ago</p>
+          </div>
+        </div>
+        <div class="notifications unread">
+          <img src="./assets/images/avatar-angela-gray.webp" alt="image of Angela Gray" />
+          <div class="notifications-content">
+            <h2>
+              <span class="name fw-800">Angela Gray</span>
+              <span class="action fw-500">followed you</span>
+            </h2>
+            <p class="time fw-500">5m ago</p>
+          </div>
+        </div>
+        <div class="notifications unread">
+          <img src="./assets/images/avatar-jacob-thompson.webp" alt="image of Jacob Thompson" />
+          <div class="notifications-content">
+            <h2>
+              <span class="name fw-800">Jacob Thompson</span>
+              <span class="action fw-500">has joined your group</span>
+              <span class="object2 fw-800">Chess Club</span>
+            </h2>
+            <p class="time fw-500">1 day ago</p>
+          </div>
+        </div>
+        <div class="notifications notification-rizky">
+          <img src="./assets/images/avatar-rizky-hasanuddin.webp" alt="image of Rizky Hasanuddin" />
+          <div class="notifications-content-comment">
+            <div class="notifications-content">
+              <h2>
+                <span class="name fw-800">Rizky Hasanuddin</span>
+                <span class="action fw-500">sent you a private message</span>
+                <span class="object fw-800"></span>
+              </h2>
+              <p class="time fw-500">5 days ago</p>
+            </div>
+            <p class="comments">
+              Hello, thanks for setting up the Chess Club. I've been a member
+              for a few weeks notw and I'm already having lots of fun and
+              improving my game.
+            </p>
+          </div>
+        </div>
+        <div class="notifications">
+          <img src="./assets/images/avatar-kimberly-smith.webp" alt="image of Kimberly Smith" />
+          <div class="notifications-content">
+            <h2>
+              <span class="name fw-800">Kimberly Smith</span>
+              <span class="action fw-500">commented on your picture</span>
+              <span class="object fw-800"></span>
+            </h2>
+            <p class="time fw-500">1 week ago</p>
+          </div>
+          <img src="./assets/images/image-chess.webp" alt="" class="chess" />
+        </div>
+        <div class="notifications notifications-nathan">
+          <img src="./assets/images/avatar-nathan-peterson.webp" alt="image of Nathan Peterson" />
+          <div class="notifications-content">
+            <h2>
+              <span class="name fw-800">Nathan Peterson</span>
+              <span class="action fw-500">reacted to your recent post</span>
+              <span class="object fw-800">5 end-game strategies to increase your win rate</span>
+            </h2>
+            <p class="time fw-500">2 weeks ago</p>
+          </div>
+        </div>
+        <div class="notifications">
+          <img src="./assets/images/avatar-anna-kim.webp" alt="image of Anna Kim" />
+          <div class="notifications-content">
+            <h2>
+              <span class="name fw-800">Anna Kim</span>
+              <span class="action fw-500">left the group</span>
+              <span class="object2 fw-800">Chess Club</span>
+            </h2>
+            <p class="time fw-500">2 weeks ago</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://www.frontendmentor.io/profile/yellowflash2041">yellowflash2041</a>.
+  </div>
+  <script src="./script.js"></script>
+</body>
+
+</html>

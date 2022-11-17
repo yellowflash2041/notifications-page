@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Plus+Jakarta+Sans:wght@500;800&display=swap");
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font: inherit;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-800 {
+  font-weight: 800;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Plus Jakarta Sans";
+  background-color: #f2f2f2;
+}
+
+.container {
+  max-width: 730px;
+  padding-block: 33px 0;
+  padding-inline: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 31px;
+  background-color: white;
+  box-shadow: 0px 20px 60px rgba(73, 97, 168, 0.05);
+  border-radius: 15px;
+}
+
+@media (max-width: 481px) {
+  .container {
+    padding-block: 24px 29px;
+    padding-inline: 16px;
+    gap: 24px;
+    border-radius: 0;
+  }
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.notif-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 11px;
+}
+
+.notif-container > h1 {
+  color: #1c202b;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+@media (max-width: 481px) {
+  .notif-container > h1 {
+    font-size: 20px;
+    line-height: 25px;
+  }
+}
+
+.notif-number {
+  color: white;
+  background: #0a327b;
+  width: 32px;
+  height: 25px;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+}
+
+.mark {
+  font-size: 16px;
+  line-height: 20px;
+  text-align: right;
+
+  color: #5e6778;
+}
+
+@media (max-width: 481px) {
+  .mark {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+.notifications-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.notifications {
+  display: flex;
+  padding-block: 18px 17px;
+  padding-inline: 20px;
+  gap: 19px;
+}
+
+.notifications-nathan {
+  padding-block: 20px;
+}
+
+.notification-rizky {
+  padding-block: 18px;
+}
+
+.notifications > img:first-of-type {
+  display: block;
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+}
+
+@media (max-width: 481px) {
+  .notifications-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .notifications {
+    padding: 16px 12px 16px 16px;
+    gap: 13px;
+  }
+
+  .notifications > img:first-of-type {
+    width: 39px;
+    height: 39px;
+  }
+}
+
+.notifications-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.name,
+.action,
+.object,
+.object2,
+.time {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.name {
+  color: #1c202b;
+}
+
+.action,
+.object {
+  color: #5e6778;
+}
+
+.object2 {
+  color: #0a327b;
+}
+
+.time {
+  color: #939cad;
+}
+
+@media (max-width: 481px) {
+  .notifications-content {
+    gap: 0px;
+  }
+
+  .name,
+  .action,
+  .object,
+  .object2,
+  .time {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+.mark:hover,
+.name:hover,
+.object:hover,
+.object2:hover {
+  cursor: pointer;
+  color: #0a327b;
+}
+
+.unread {
+  background-color: #f7fafd;
+}
+
+.unread > .notifications-content > h2 > span:last-of-type {
+  display: inline-block;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+}
+
+.unread > .notifications-content > h2 > span:last-of-type::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: #f65552;
+  border-radius: 100%;
+  position: absolute;
+  top: 7px;
+  margin-left: 6px;
+}
+
+.chess {
+  margin-left: auto;
+  border-radius: 7px;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+}
+
+.notifications-content-comment {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.comments {
+  border: 1px solid #dde7ee;
+  padding: 17px 20px 20px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  line-height: 20px;
+
+  color: #5e6778;
+}
+
+.comments:hover {
+  cursor: pointer;
+  background: #e5effa;
+}
+
+@media (max-width: 481px) {
+  .chess {
+    height: 39px;
+    width: 39px;
+  }
+
+  .comments {
+    font-size: 14px;
+    line-height: 18px;
+    padding: 16px;
+  }
+
+  .notifications-content-comment {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+}
